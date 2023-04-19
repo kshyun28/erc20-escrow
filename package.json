@@ -1,0 +1,38 @@
+{
+  "name": "erc20-escrow",
+  "version": "1.0.0",
+  "description": "ERC20 Escrow smart contract POC.",
+  "author": "Jasper Gabriel",
+  "license": "MIT",
+  "scripts": {
+    "lint:ts": "eslint . --ext .ts",
+    "lint:sol": "npx hardhat check",
+    "lint:ts:fix": "npm run lint:ts -- --fix",
+    "format": "prettier --write .",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.ts --network",
+    "interact": "npx hardhat run scripts/interact.ts --network"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-solhint": "^3.0.0",
+    "@openzeppelin/contracts": "^4.8.1",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "hardhat": "^2.12.7",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^2.8.4",
+    "prettier-plugin-solidity": "^1.1.2",
+    "typescript": "^4.9.5"
+  }
+}
